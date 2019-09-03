@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "sans-serif", Arial, Helvetica;
+    color: silver;
+    box-sizing: border-box;
+}
+h1, h2, h3{
+    margin: 50px auto;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+    color: magenta;
+}
+/* -----header styling STARTS here-----*/
+#header-box{
+    display: grid;
+    position: fixed;
+    width: 100%;
+    /* border: rgb(240, 128, 128) 1px solid; */
+    transition: display 10.3s linear;
+}
+#contactHeader{
+    /* background:linear-gradient( -90deg, rgb(240, 128, 128), rgb(65, 42, 57)); */
+    background: rgba(25, 21, 36, 0.842);
+    padding: 8px;
+    font-size: .8rem;
+    text-align: center;
+}
+#contactHeader a{
+    text-decoration: none;
+    color: magenta;
+}
+#contactHeader a:hover{
+    color: #fff;
+}
+#branding-box{    
+    position: relative;
+    background: rgba(31, 31, 37, 0.75);
+    height: 90px;
+    padding: 0 100px;    
+} 
+#logo{
+    position: absolute;
+    top: -2vh;
+    left: 10vw;
+}
+#logo svg{
+    width: 160px;
+    height: 100px; 
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+#logo svg:hover{
+    width: 169px;
+    height: 105px;
+}
+#burger-menu {
+    position: absolute;
+    font-family: "fontawesome";
+    font-size: 2.8em;
+    color: #f2f2f2;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    transition: font-size 0.3s ease-in-out;
+    /* position: absolute;
+    content: "\f0c9";
+    font-family: "fontawesome";
+    font-size: 3rem;
+    color: whitesmoke;
+    top: 20px;
+    right: 30px; */
+}
+#burger-menu:hover{
+    font-size: 3.1em;
+    color: #3ab956;
+}
+
+.nav-links{
+    /* position: absolute; */
+    text-transform: uppercase;
+    /* top: 140px; */
+    /* display: block; */
+    opacity: 1;
+    transform: translate(100%);
+    transition: transform 0.5s ease-in-out;
+}
+.nav-items{
+    padding: 16px ;
+    background: rgba(173, 173, 173, 0.466);
+}
+.nav-items:hover{
+    background: rgba(94, 92, 92, 0.74);
+}
+.nav-items a{
+    text-decoration: none;
+    color: magenta;
+    padding: 20px;
+    font-size: .90rem;
+    letter-spacing: 2.2px;
+}
+.nav-items a:hover{
+    color: rgb(44, 184, 63);
+    font-size: 1rem;
+}
+.nav-active{
+    transform: translateX(0%);
+    /* opacity: 1; */
+}
+/* ----header styling ENDS here---- */
+#showcase{
+    height: 70vh;
+    width: 100%;
+    background-image: url("https://source.unsplash.com/dah-jZWgzx8");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* accordian section STARTS here */
+#category{
+    width: 90vw;
+    margin: auto;
+}
+button.accordian {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: #FFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s linear;
+    margin: 5px;
+    font-size: 2.5rem;
+    text-shadow: 5px 10px 10px rgb(34, 33, 33);
+}
+button.btn1{
+    height: 40vh;
+    width: 100%;
+    background: url("https://source.unsplash.com/hcs5KxfmVnQ");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button.btn2{
+    height: 40vh;
+    width: 100%;
+    background: url("https://source.unsplash.com/9PO1tMtT_QA");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+button.btn3{
+    height: 40vh;
+    width: 100%;
+    background: url("https://source.unsplash.com/lTuJtEUsJhA");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+button.accordian:hover {
+    /* background-color: rgb(70, 189, 133); */
+    background-color:  rgb(70, 189, 133);
+}
+button.accordian.is-open {
+    background-color: rgb(129, 67, 158);
+}
+button.accordian::after {
+    content: "\f055";
+    font-family: "fontawesome";
+    font-size: 3.5rem;
+    color: whitesmoke;
+    float: right;
+}
+button.accordian.is-open::after {
+    content: "\f056";
+}
+.accordian-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+}
+.accordian-content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100x;
+    text-align: center;
+    /* background-color: rgba(70, 189, 133, 0.068); */
+    background-color: rgba(41, 45, 100, 0.89);
+}
+.product-grid img{
+    width: 50%;
+    margin: 30px;
+    box-shadow: -1px 1px 5px rgb(255, 255, 255);
+}
+
+/* product offer and ad section STARTS here */
+#product-teaser{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    height: auto;
+    width: 90%;
+    margin: 100px auto;
+    /* background-image: url("https://source.unsplash.com/CNDiESvWfrk"); */
+    /* background-size: contain;
+    background-repeat: no-repeat; */
+}
+.card-grid{
+    box-shadow: 2px 1px 10px #888888;
+    margin-bottom: 50px; 
+}
+.card-grid img{
+    max-width: 100%;  
+    height: auto;  
+}
+.card-grid p{
+    padding: 20px;
+}
+.card-grid button{
+    width: 100%;
+    padding: 20px;
+    font-size: 1.2em;
+    color: rgb(251, 255, 0);
+    background-color: rgba(49, 201, 201);
+    border: none;
+    outline: none;
+}
+
+footer{
+    background-color: #111;
+    padding: 30px;
+}
+
+/* media Queries for bigger screens */
+
+@media only screen and (max-width: 480px){
+    #product-teaser{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .accordian-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 650px){
+    #product-teaser{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 700px){
+    #product-teaser{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .accordian-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 950px){
+    #product-teaser{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    .accordian-content-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
