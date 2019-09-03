@@ -13,6 +13,9 @@ h1, h2, h3{
     padding: 30px;
     color: magenta;
 }
+.section-title{
+    margin: 50px 0 30px 0;
+}
 /* -----header styling STARTS here-----*/
 #header-box{
     display: grid;
@@ -205,7 +208,7 @@ button.accordian.is-open::after {
     grid-gap: 10px;
     height: auto;
     width: 90%;
-    margin: 100px auto;
+    margin: 20px auto;
     /* background-image: url("https://source.unsplash.com/CNDiESvWfrk"); */
     /* background-size: contain;
     background-repeat: no-repeat; */
@@ -234,6 +237,19 @@ button.accordian.is-open::after {
 footer{
     background-color: #111;
     padding: 30px;
+    font-size: 1.1em;
+}
+.copyright {
+    font-size: 0.8em;
+    padding: 30px 0 0;
+    color: #f2f2f2;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-align: center;
+    border-top: silver 0.5px solid;
+}
+.copyright a{
+    color: magenta;
 }
 
 /* media Queries for bigger screens */
