@@ -225,8 +225,8 @@ button.accordian.is-open::after {
     width: 100%;
     padding: 20px;
     font-size: 1.2em;
-    color: rgb(251, 255, 0);
-    background-color: rgba(49, 201, 201);
+    color: rgb(255, 153, 0);
+    background-color: rgba(34, 73, 73, 0.897);
     border: none;
     outline: none;
 }
