@@ -110,7 +110,7 @@ h1, h2, h3{
 }
 .nav-active{
     transform: translateX(0%);
-    /* opacity: 1; */
+    opacity: 1;
 }
 /* ----header styling ENDS here---- */
 #showcase{
