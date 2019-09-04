@@ -82,27 +82,28 @@ h1, h2, h3{
 }
 
 .nav-links{
-    /* position: absolute; */
     text-transform: uppercase;
-    /* top: 140px; */
-    /* display: block; */
+    color:  lightseagreen;
+    font-size: 1.5em;
     opacity: 1;
     transform: translate(100%);
     transition: transform 0.5s ease-in-out;
 }
 .nav-items{
-    padding: 16px ;
-    background: rgba(173, 173, 173, 0.466);
+    padding: 0px ;
+    background: rgba(196, 194, 194, 0.623);
 }
 .nav-items:hover{
-    background: rgba(94, 92, 92, 0.74);
+    background: rgba(94, 92, 92, 0.856);
 }
 .nav-items a{
+    display: block;
     text-decoration: none;
     color: magenta;
-    padding: 20px;
+    padding: 16px;
     font-size: .90rem;
     letter-spacing: 2.2px;
+    /* background: black; */
 }
 .nav-items a:hover{
     color: rgb(44, 184, 63);
@@ -129,7 +130,7 @@ button.accordian {
     width: 100%;
     padding: 10px 20px;
     font-size: 1.2rem;
-    color: #FFF;
+    color: #ffffff; 
     border: none;
     outline: none;
     cursor: pointer;
@@ -137,7 +138,7 @@ button.accordian {
     transition: background-color 0.2s linear;
     margin: 5px;
     font-size: 2.5rem;
-    text-shadow: 5px 10px 10px rgb(34, 33, 33);
+    text-shadow: 1px 2px 3px rgb(16, 70, 170);
 }
 button.btn1{
     height: 40vh;
